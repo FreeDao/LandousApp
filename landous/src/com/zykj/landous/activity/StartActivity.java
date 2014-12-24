@@ -22,7 +22,7 @@ public class StartActivity extends Activity {
 		context = this;
 		// 娓����
 		AlphaAnimation aa = new AlphaAnimation(0.3f, 1.0f);
-		aa.setDuration(2000);
+		aa.setDuration(100);
 		startView.setAnimation(aa);
 		aa.setAnimationListener(new AnimationListener() {
 
@@ -45,7 +45,7 @@ public class StartActivity extends Activity {
 	}
 
 	private void redirectto() {
-		Intent intent = new Intent(this, WelcomeActivity
+		Intent intent = new Intent(this, MainActivity
 				.class);
 		startActivity(intent);
 		StartActivity.this.finish();
